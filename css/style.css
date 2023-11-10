@@ -1,0 +1,54 @@
+/* Command: sass --watch sass/style.scss css/style.css*/
+/*
+CSS Rule Order
+--- ---- -----
+Positioning
+Display & Box Model
+Color
+Text
+Other
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/******************** Variables ********************/
+/******************** Header ********************/
+header {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  border: 1px solid black;
+}
+header > * {
+  flex-grow: 1;
+  border: 1px solid purple;
+}
+header #title {
+  align-self: center;
+  text-align: center;
+  font-size: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header nav * {
+  display: inline;
+}
+
+/******************** Main ********************/
+main {
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+}
+
+/******************** Footer ********************/
+
+/*# sourceMappingURL=style.css.map */
