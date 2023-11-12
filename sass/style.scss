@@ -1,43 +1,68 @@
 /* Command: sass --watch sass/style.scss css/style.css*/
 
+/******************** Imports ********************/
+
 @import 'core';
+@import 'hamburger';
+@import 'w3schoolsLib.scss';
 
 /******************** Variables ********************/
+/******************** General ********************/
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+
 /******************** Header ********************/
 
 header {
-    display: flex;
-    align-items: stretch;
-    align-content: stretch;
+    margin: 0 auto;
+    // border: 1px solid black;
+    width: 99.3%;
 
-    border: 1px solid black;
+    background-color: white;
+}
 
-    > * { 
-        flex-grow: 1;
-        border: 1px solid purple;
+.grid-container {
+    position: relative;
+
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+
+    height: 100px;
+    width: 100%;
+
+    > * {
+        justify-self: center;
+        align-self: center;
+        // border: 1px solid black;
     }
 
     #title {
-        align-self: center;
+        grid-column: 1 / span 4;
+        grid-row: 1;
 
-        text-align: center;
         font-size: 1.4em;
         font-family: Arial, Helvetica, sans-serif;
-    }
 
-    nav {
-        * {
-            display: inline;
-        }
+        text-align: center;
     }
+}
+
+#theMenu {
+    display: none;
 }
 
 /******************** Main ********************/
 
 main {
     display: grid;
-    grid-template: 1fr / 1fr;
+    // grid-template: 1fr / 1fr;
     justify-items: center;
+}
+
+#intro {
+    font-family: HelveticaNeue,Helvetica Neue,helvetica,Sans-Serif;
 }
 
 /******************** Footer ********************/

@@ -4,32 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .mySlides {display:none;}
+    </style>
     <title>Cooking With Karly</title>
 </head>
 <body>
     <header>
-        <span id="title">COOKING WITH KARLY</span>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Categories</li>
-                <li>About Me</li>
-            </ul>
-            <ul id="socials">
-                <li>
-                    <a href=""><img alt="TikTok" fetchpriority="high" src="https://static.wixstatic.com/media/11062b_8e8bb1bfaeb54186ace77d5ab14933ff~mv2.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_8e8bb1bfaeb54186ace77d5ab14933ff~mv2.png" style="width: 22px; height: 22px; object-fit: cover;"></a>
-                </li>
-                <li>
-                    <a href=""><img alt="Instagram" fetchpriority="high" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" style="width: 22px; height: 22px; object-fit: cover;"></a>
-                </li>
-            </ul>
-        </nav>
+        <div class="grid-container">
+            <span id="title">COOKING WITH KARLY</span>
+            <nav>
+                <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+            </nav>
+        </div>
+        <div id="theMenu">
+
+        </div>
     </header>
-    <br><br><br><br>
+
     <main>
+        <div class="w3-content w3-section" style="max-width:1000px">
+            <img class="mySlides" alt="some place" src="img/karlyEatingSushi.jpg" style="width:100%">
+            <img class="mySlides" alt="" src="img/pizza.jpg" style="width:100%">
+            <img class="mySlides" alt="" src="img/snackos.jpg" style="width:100%">
+            <img class="mySlides" alt="" src="img/fruitsAndCroissant.jpg" style="width:100%">
+        </div>
+        <section id="intro">
+            <h1>COOKING WITH KARLY</h1>
+            <p>
+                Welcome to Cooking with Karly! Here we are dedicated to sharing
+                delicious and healthy recipes, restaurant reviews, and cooking
+                tips to help people fall in love with cooking one dish at a time.
+            </p>
+        </section>
+        <section id="blogs">
+
+        </section>
+        <section id="posts">
+
+        </section>
+        <section id="aboutMe">
+
+        </section>
+        <section id="subscribe">
+
+        </section>
         <h1>Website is cooking! Stay tuned!</h1>
         <img src="https://imgs.search.brave.com/-Tqui1L5nUenaeDBfPbwdWTj0Li8-SAlTp-eU0RhMlU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vdmVjdG9y/cy9jYXJ0b29uLWtp/ZC1jaGVmcy1jb29r/aW5nLXZlY3Rvci1p/ZDYwMzk5NzI0OD9r/PTIwJm09NjAzOTk3/MjQ4JnM9NjEyeDYx/MiZ3PTAmaD01elcz/UUdxVHlTNkhoX2R1/U0w4UmhGTWVqZFgw/SnJid0VhU2JBa1Ja/bWZrPQ.jpeg" alt="">
+        <div class="slideshow" id="showTwo">
+            
+        </div>
     </main>
     <footer></footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
