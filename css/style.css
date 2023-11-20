@@ -134,10 +134,54 @@ main {
   justify-items: center;
 }
 
+section {
+  border: 1px solid black;
+}
+
 #intro {
   font-family: HelveticaNeue, Helvetica Neue, helvetica, Sans-Serif;
   font-size: 1.5em;
   text-align: center;
+}
+
+#categories .category {
+  border: 1px solid red;
+  margin: 20px 0;
+  width: 100%;
+  height: auto;
+  clear: both;
+}
+#categories .category img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#categories .category .caption {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 20%;
+  width: 85%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 2;
+}
+#categories .category .caption a, #categories .category .caption .captionTitle {
+  text-align: center;
+}
+#categories .category .caption a {
+  display: block;
+  color: inherit;
+  font: normal normal normal 14.25px/1.4em proxima-n-w01-reg, proxima-n-w05-reg, sans-serif;
+  letter-spacing: 0.25em;
+}
+#categories .category .caption .captionTitle {
+  font-size: 23px;
+  font: normal normal bold 23.465px/1.4em "playfair display", serif;
 }
 
 /******************** Footer ********************/
