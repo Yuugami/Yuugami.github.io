@@ -145,6 +145,7 @@ section {
 }
 
 #categories .category {
+  position: relative;
   border: 1px solid red;
   margin: 20px 0;
   width: 100%;
@@ -157,15 +158,19 @@ section {
   height: 100%;
   z-index: 1;
 }
+#categories .category .captionSpace {
+  height: 100px;
+}
 #categories .category .caption {
-  border: 1px solid green;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  position: relative;
-  bottom: 20%;
+  position: absolute;
+  bottom: 6%;
+  left: 7%;
   width: 85%;
-  height: 100px;
+  height: 115px;
   margin: 0 auto;
   background-color: white;
   z-index: 2;
