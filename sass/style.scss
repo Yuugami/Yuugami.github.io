@@ -10,7 +10,12 @@
 /******************** General ********************/
 
 body {
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(240, 240, 240);
+
+    > * {
+        margin: 0 auto;
+        width: 97%;
+    }
 }
 
 .span3ColFrom2 {
@@ -20,10 +25,6 @@ body {
 /******************** Header ********************/
 
 header {
-    margin: 0 auto;
-    // border: 1px solid black;
-    width: 99.3%;
-
     background-color: white;
 }
 
@@ -65,22 +66,33 @@ main {
     justify-items: center;
 }
 
-section {
-    // display: block;
-    border: 1px solid black;
+#slideShow {
+    width: 85%;
 }
 
 #intro {
-    font-family: HelveticaNeue,Helvetica Neue,helvetica,Sans-Serif;
-    font-size: 1.5em;
     text-align: center;
+
+    background-color: white;
+
+    h1 {
+        font: normal normal normal 14.25px/1.4em proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;
+        font-size: 14px;
+        line-height: 1.3em;
+        letter-spacing: 0.25em;
+    }
+
+    p {
+        font: normal normal bold 23.465px/1.4em 'playfair display',serif;
+        font-size: 23px;
+    }
 }
 
 #categories {
     .category {
         position: relative;
 
-        border: 1px solid red;
+        // border: 1px solid red;
         margin: 20px 0;
 
         width: 100%;
@@ -138,19 +150,35 @@ section {
 }
 
 #blogFeed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .blogItem {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        width: 85%;
+
+        background-color: white;
+
+        .blogPicture {
+            width: 100%;
+
+            img {
+                width:100%;
+            }
+        }
     }
 
     .blogPost {
         width: 100%;
 
         .blogPostContainer {
-            margin: 0 auto;
+            margin: 0 auto 20px auto;
             width: 80%;
-            border: 1px solid black;
+            // border: 1px solid black;
 
             .postTime {
                 padding: 10px 0;
@@ -167,7 +195,7 @@ section {
             }
 
             hr {
-                margin: 5px 0;
+                margin: 12px 0;
             }
 
             .postAnalytics {
