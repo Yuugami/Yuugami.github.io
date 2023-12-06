@@ -197,6 +197,18 @@ main {
   font: normal normal bold 23.465px/1.4em "playfair display", serif;
 }
 
+span.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 85%;
+  height: 85px;
+  color: white;
+  background-color: #2b2b2b;
+  font: normal normal normal 15px/1.4em georgia, palatino, "book antiqua", "palatino linotype", serif;
+}
+
 #blogFeed {
   display: flex;
   flex-direction: column;
@@ -243,6 +255,58 @@ main {
   display: flex;
   gap: 5px;
   align-content: space-between;
+}
+#blogFeed #readMore {
+  display: flex;
+  width: 100%;
+}
+
+#aboutMe img {
+  width: 100%;
+}
+#aboutMe #aboutMeContainer {
+  margin: 0 auto;
+  width: 85%;
+  text-align: center;
+  background-color: white;
+}
+#aboutMe #aboutMeContainer h4 {
+  padding: 15px 0px;
+  font: normal normal bold 23.465px/1.4em "playfair display", serif;
+}
+#aboutMe #aboutMeContainer p {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font: normal normal normal 12.1786407767px/1.4em georgia, palatino, "book antiqua", "palatino linotype", serif;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 13px;
+}
+
+#subscribe {
+  width: 100%;
+}
+#subscribe #subscribeContainer {
+  margin: 5px auto;
+  padding: 10px 0;
+  background-color: white;
+  width: 85%;
+  text-align: center;
+}
+#subscribe #subscribeContainer #callToAction {
+  padding: 5px 0;
+  padding-bottom: 15px;
+  font: normal normal normal 15px/1.4em helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+}
+#subscribe #subscribeContainer #email input {
+  padding: 0 10px;
+  padding-right: 30px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+#subscribe #subscribeContainer span.button {
+  height: 50px;
 }
 
 /******************** Footer ********************/
