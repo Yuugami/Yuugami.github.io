@@ -96,19 +96,20 @@ body > * {
   width: 97%;
 }
 
-.span3ColFrom2 {
-  grid-column: 2/5;
+.wBgCntrdTxt {
+  text-align: center;
+  background-color: white;
 }
 
 /******************** Header ********************/
-header {
-  background-color: white;
+header nav ul {
+  display: none;
 }
 
 .grid-container {
   position: relative;
   display: grid;
-  grid-template: 1fr/1fr 1fr 1fr 1fr 1fr;
+  grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   height: 100px;
   width: 100%;
 }
@@ -117,11 +118,10 @@ header {
   align-self: center;
 }
 .grid-container #title {
-  grid-column: 1/span 4;
+  grid-column: 1/span 10;
   grid-row: 1;
   font-size: 1.4em;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
 }
 
 #theMenu {
@@ -138,16 +138,6 @@ main {
   width: 85%;
 }
 
-#intro {
-  text-align: center;
-  background-color: white;
-}
-#intro h1 {
-  font: normal normal normal 14.25px/1.4em proxima-n-w01-reg, proxima-n-w05-reg, sans-serif;
-  font-size: 14px;
-  line-height: 1.3em;
-  letter-spacing: 0.25em;
-}
 #intro p {
   font: normal normal bold 23.465px/1.4em "playfair display", serif;
   font-size: 23px;
@@ -180,11 +170,7 @@ main {
   width: 85%;
   height: 115px;
   margin: 0 auto;
-  background-color: white;
   z-index: 2;
-}
-#categories .category .caption a, #categories .category .caption .captionTitle {
-  text-align: center;
 }
 #categories .category .caption a {
   display: block;
@@ -218,8 +204,12 @@ span.button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0px;
   width: 85%;
   background-color: white;
+}
+#blogFeed .blogItem:not(:first-child) {
+  margin-top: 40px;
 }
 #blogFeed .blogItem .blogPicture {
   width: 100%;
@@ -268,7 +258,6 @@ span.button {
   margin: 0 auto;
   width: 85%;
   text-align: center;
-  background-color: white;
 }
 #aboutMe #aboutMeContainer h4 {
   padding: 15px 0px;
@@ -279,8 +268,22 @@ span.button {
   padding-bottom: 15px;
   font: normal normal normal 12.1786407767px/1.4em georgia, palatino, "book antiqua", "palatino linotype", serif;
   line-height: 1.5em;
-  text-align: center;
   font-size: 13px;
+}
+#aboutMe #aboutMeContainer #callToAction {
+  padding: 5px 0;
+  padding-bottom: 15px;
+  font: normal normal normal 15px/1.4em helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+}
+#aboutMe #aboutMeContainer #email input {
+  padding: 0 10px;
+  padding-right: 30px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+#aboutMe #aboutMeContainer span.button {
+  height: 50px;
 }
 
 #subscribe {
@@ -289,9 +292,7 @@ span.button {
 #subscribe #subscribeContainer {
   margin: 5px auto;
   padding: 10px 0;
-  background-color: white;
   width: 85%;
-  text-align: center;
 }
 #subscribe #subscribeContainer #callToAction {
   padding: 5px 0;
@@ -310,5 +311,108 @@ span.button {
 }
 
 /******************** Footer ********************/
+footer > div {
+  display: flex;
+  flex-direction: column;
+}
+footer > div div {
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+footer > div div:first-child {
+  margin-top: 43px;
+  margin-bottom: 22px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /******************** General ********************/
+  body > * {
+    width: 100%;
+  }
+
+  /******************** Header ********************/
+  .grid-container #title,
+.grid-container nav {
+    grid-row: 1;
+  }
+  .grid-container #title {
+    grid-column: 1/span 7;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .grid-container nav {
+    grid-column: 7/span 6;
+    display: flex;
+    justify-content: start;
+    width: 80%;
+  }
+  .grid-container nav * {
+    display: inline;
+    text-transform: uppercase;
+  }
+  .grid-container nav input {
+    display: none;
+  }
+  .grid-container nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+  }
+  .grid-container nav ul a {
+    text-decoration: none;
+  }
+  .grid-container nav #socials {
+    gap: 6px;
+    padding-left: 45px;
+  }
+
+  /******************** Main ********************/
+  main {
+    grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  main #slideShow {
+    grid-row: 1;
+    grid-column: 3/span 4;
+  }
+  main #intro {
+    grid-row: 1;
+    grid-column: 7/span 4;
+    display: flex;
+    align-items: center;
+  }
+  main #intro p {
+    padding: 0 80px;
+    font-size: 28px;
+  }
+  main #categories {
+    grid-row: 2;
+    grid-column: 3/span 8;
+    display: grid;
+    grid-template: 1fr/1fr 1fr 1fr;
+    margin-top: 10px;
+  }
+  main #categories .category .caption {
+    bottom: 74%;
+  }
+  main #blogFeed {
+    grid-row: 3;
+    grid-column: 3/span 5;
+  }
+  main #aboutMe {
+    grid-row: 3;
+    grid-column: 8/span 3;
+  }
+  main #subscribe {
+    grid-row: 3;
+    grid-column: 8/span 3;
+  }
+  main .backToTop {
+    grid-row: 5;
+    grid-column: 1/span 12;
+  }
+
+  /******************** Footer ********************/
+}
 
 /*# sourceMappingURL=style.css.map */

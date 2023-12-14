@@ -7,6 +7,13 @@
 @import 'w3schoolsLib.scss';
 
 /******************** Variables ********************/
+
+$font1: normal normal normal 14.25px/1.4em proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;
+$font2: normal normal bold 23.465px/1.4em 'playfair display',serif;
+$font3: normal normal normal 15px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;;
+$font4: normal normal normal 12.178640776699028px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
+$font5: normal normal normal 15px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+
 /******************** General ********************/
 
 body {
@@ -18,21 +25,23 @@ body {
     }
 }
 
-.span3ColFrom2 {
-    grid-column: 2 / 5;
+.wBgCntrdTxt {
+    text-align: center;
+    background-color: white;
 }
 
 /******************** Header ********************/
 
-header {
-    background-color: white;
+header nav ul {
+    display: none;
 }
 
 .grid-container {
     position: relative;
 
     display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 
+                        1fr 1fr 1fr 1fr 1fr 1fr;
 
     height: 100px;
     width: 100%;
@@ -43,13 +52,11 @@ header {
     }
 
     #title {
-        grid-column: 1 / span 4;
+        grid-column: 1 / span 10;
         grid-row: 1;
 
         font-size: 1.4em;
         font-family: Arial, Helvetica, sans-serif;
-
-        text-align: center;
     }
 }
 
@@ -69,19 +76,8 @@ main {
 }
 
 #intro {
-    text-align: center;
-
-    background-color: white;
-
-    h1 {
-        font: normal normal normal 14.25px/1.4em proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;
-        font-size: 14px;
-        line-height: 1.3em;
-        letter-spacing: 0.25em;
-    }
-
     p {
-        font: normal normal bold 23.465px/1.4em 'playfair display',serif;
+        font: $font2;
         font-size: 23px;
     }
 }
@@ -122,25 +118,20 @@ main {
             height: 115px;
 
             margin: 0 auto;
-            background-color: white;
 
             z-index: 2;
-
-            a, .captionTitle {
-                text-align: center;
-            }
 
             a {
                 display: block;
 
                 color: inherit;
-                font: normal normal normal 14.25px/1.4em proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;
+                font: $font1;
                 letter-spacing: 0.25em;
             }
 
             .captionTitle {
                 font-size: 23px;
-                font: normal normal bold 23.465px/1.4em 'playfair display',serif;
+                font: $font2;
             }
         }
     }
@@ -158,7 +149,7 @@ span.button {
     color: white;
     background-color: rgb(43, 43, 43);
 
-    font: normal normal normal 15px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
+    font: $font3;
 }
 
 #blogFeed {
@@ -171,9 +162,15 @@ span.button {
         flex-direction: column;
         align-items: center;
 
+        margin-bottom: 0px;
+
         width: 85%;
 
         background-color: white;
+
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
 
         .blogPicture {
             width: 100%;
@@ -198,7 +195,7 @@ span.button {
             .postTitle {
                 padding: 7px 0;
 
-                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-family: Georgia, 'Times New Roman', Times, serif;
             }
 
             .postSubtitle {
@@ -240,21 +237,36 @@ span.button {
         width: 85%;
         text-align: center;
 
-        background-color: white;
-
         h4 {
             padding: 15px 0px;
-            font: normal normal bold 23.465px/1.4em "playfair display", serif;
+            font: $font2;
         }
 
         p {
             padding-top: 5px;
             padding-bottom: 15px;
 
-            font: normal normal normal 12.178640776699028px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
+            font: $font4;
             line-height: 1.5em;
-            text-align: center;
             font-size: 13px;
+        }
+
+        #callToAction {
+            padding: 5px 0;
+            padding-bottom: 15px;
+            font: $font5; 
+        }
+
+        #email input {
+            padding: 0 10px;
+            padding-right: 30px;
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+        }
+
+        span.button {
+            height: 50px;
         }
     }
 }
@@ -265,14 +277,12 @@ span.button {
     #subscribeContainer {
         margin: 5px auto;
         padding: 10px 0;
-        background-color: white;
         width: 85%;
-        text-align: center;
 
         #callToAction {
             padding: 5px 0;
             padding-bottom: 15px;
-            font: normal normal normal 15px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+            font: $font5; 
         }
 
         #email input {
@@ -290,3 +300,23 @@ span.button {
 }
 
 /******************** Footer ********************/
+
+footer {
+    > div {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            margin-bottom: 30px;
+            margin-left: 20px;
+        }
+
+        div:first-child {
+            margin-top: 43px;
+            margin-bottom: 22px;
+        }
+    }
+}
+
+@import 'tablet';
+@import 'desktop';
