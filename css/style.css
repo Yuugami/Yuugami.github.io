@@ -175,12 +175,12 @@ main {
 #categories .category .caption a {
   display: block;
   color: inherit;
-  font: normal normal normal 14.25px/1.4em proxima-n-w01-reg, proxima-n-w05-reg, sans-serif;
-  letter-spacing: 0.25em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 #categories .category .caption .captionTitle {
-  font-size: 23px;
   font: normal normal bold 23.465px/1.4em "playfair display", serif;
+  font-size: 27px;
 }
 
 span.button {
@@ -251,49 +251,11 @@ span.button {
   width: 100%;
 }
 
-#aboutMe img {
-  width: 100%;
-}
-#aboutMe #aboutMeContainer {
-  margin: 0 auto;
-  padding-bottom: 10px;
-  width: 85%;
-  text-align: center;
-}
-#aboutMe #aboutMeContainer h4 {
-  padding: 15px 0px;
-  font: normal normal bold 23.465px/1.4em "playfair display", serif;
-}
-#aboutMe #aboutMeContainer p {
-  padding-top: 5px;
-  padding-bottom: 15px;
-  font: normal normal normal 12.1786407767px/1.4em georgia, palatino, "book antiqua", "palatino linotype", serif;
-  line-height: 1.5em;
-  font-size: 13px;
-}
-#aboutMe #aboutMeContainer #callToAction {
-  padding: 5px 0;
-  padding-bottom: 15px;
-  font: normal normal normal 15px/1.4em helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
-}
-#aboutMe #aboutMeContainer #email input {
-  padding: 0 10px;
-  padding-right: 30px;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-}
-#aboutMe #aboutMeContainer span.button {
-  height: 50px;
-}
-
-#subscribe {
-  width: 100%;
-}
 #subscribe #subscribeContainer {
-  margin: 5px auto;
-  padding: 10px 0;
-  width: 85%;
+  margin: 0 auto;
+  padding: 15px 15px 10px 15px;
+  width: 100%;
+  text-align: center;
 }
 #subscribe #subscribeContainer #callToAction {
   padding: 5px 0;
@@ -309,6 +271,10 @@ span.button {
 }
 #subscribe #subscribeContainer span.button {
   height: 50px;
+}
+
+.backToTop {
+  margin: 10px 0;
 }
 
 /******************** Footer ********************/

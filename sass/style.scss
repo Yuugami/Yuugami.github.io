@@ -125,13 +125,15 @@ main {
                 display: block;
 
                 color: inherit;
-                font: $font1;
-                letter-spacing: 0.25em;
+                text-decoration: none;
+                text-transform: uppercase;
+                // font: $font1;
+                // letter-spacing: 0.25em;
             }
 
             .captionTitle {
-                font-size: 23px;
                 font: $font2;
+                font-size: 27px;
             }
         }
     }
@@ -227,30 +229,12 @@ span.button {
     }
 }
 
-#aboutMe {
-    img {
-        width: 100%;
-    }
-
-    #aboutMeContainer {
+#subscribe {
+    #subscribeContainer {
         margin: 0 auto;
-        padding-bottom: 10px;
-        width: 85%;
+        padding: 15px 15px 10px 15px;
+        width: 100%;
         text-align: center;
-
-        h4 {
-            padding: 15px 0px;
-            font: $font2;
-        }
-
-        p {
-            padding-top: 5px;
-            padding-bottom: 15px;
-
-            font: $font4;
-            line-height: 1.5em;
-            font-size: 13px;
-        }
 
         #callToAction {
             padding: 5px 0;
@@ -272,32 +256,8 @@ span.button {
     }
 }
 
-#subscribe {
-    width: 100%;
-
-    #subscribeContainer {
-        margin: 5px auto;
-        padding: 10px 0;
-        width: 85%;
-
-        #callToAction {
-            padding: 5px 0;
-            padding-bottom: 15px;
-            font: $font5; 
-        }
-
-        #email input {
-            padding: 0 10px;
-            padding-right: 30px;
-            border-top: 0;
-            border-right: 0;
-            border-left: 0;
-        }
-
-        span.button {
-            height: 50px;
-        }
-    }
+.backToTop {
+    margin: 10px 0;
 }
 
 /******************** Footer ********************/
