@@ -256,6 +256,7 @@ span.button {
 }
 #aboutMe #aboutMeContainer {
   margin: 0 auto;
+  padding-bottom: 10px;
   width: 85%;
   text-align: center;
 }
@@ -392,12 +393,24 @@ footer > div div:first-child {
     grid-template: 1fr/1fr 1fr 1fr;
     margin-top: 10px;
   }
+  main #categories .category {
+    height: 400px;
+  }
   main #categories .category .caption {
     bottom: 74%;
   }
   main #blogFeed {
     grid-row: 3;
     grid-column: 3/span 5;
+  }
+  main #blogFeed .blogItem {
+    width: 100%;
+  }
+  main #blogFeed .blogItem .blogPost .blogPostContainer {
+    width: 90%;
+  }
+  main #blogFeed img {
+    height: 367px;
   }
   main #aboutMe {
     grid-row: 3;
@@ -409,7 +422,7 @@ footer > div div:first-child {
   }
   main .backToTop {
     grid-row: 5;
-    grid-column: 1/span 12;
+    grid-column: 3/span 1;
   }
 
   /******************** Footer ********************/
