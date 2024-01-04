@@ -18,7 +18,7 @@
         <div class="grid-container wBgCntrdTxt">
             <span id="title">COOKING WITH KARLY</span>
             <nav>
-                <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+                <input type="checkbox" role="button" aria-label="Display the menu" class="menu" onclick="toggleMenu()">
                 <ul>
                     <a href=""><li>Home</li></a>
                     <a href=""><li>Categories</li></a>
@@ -35,7 +35,11 @@
             </nav>
         </div>
         <div id="theMenu">
-
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Categories</li></a>
+                <a href=""><li>About Me</li></a>
+            </ul>
         </div>
     </header>
 
@@ -46,6 +50,9 @@
                 <img class="mySlides" alt="" src="img/pizza.jpg" style="width:100%">
                 <img class="mySlides" alt="" src="img/snackos.jpg" style="width:100%">
                 <img class="mySlides" alt="" src="img/fruitsAndCroissant.jpg" style="width:100%">
+                
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
             </div>
         </section>
 
