@@ -135,30 +135,41 @@ header nav ul {
   align-items: center;
   height: 100%;
   width: 97%;
-  border: 1px solid black;
   background-color: white;
   z-index: 2;
-}
-#theMenu > * {
-  border: 1px solid black;
 }
 #theMenu ul {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
   width: 80%;
+  bottom: 15%;
 }
 #theMenu ul a, #theMenu ul li {
   display: inline;
   text-decoration: none;
 }
 #theMenu ul li {
-  position: relative;
-  border: 1px solid black;
-  color: #a0a09f;
+  display: flex;
   width: 100%;
+  height: 50px;
+}
+#theMenu ul li[aria-current=page] {
+  background-color: #272727;
+}
+#theMenu ul li[aria-current=page] a {
+  color: white;
+}
+#theMenu ul a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #a0a09f;
+  text-transform: uppercase;
 }
 
 /******************** Main ********************/
