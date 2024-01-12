@@ -36,10 +36,26 @@ function showDivs(n) {
 
 function toggleMenu() {
     var x = document.getElementById("theMenu");
-    console.log(x.style.display);
+    var y = document.getElementsByTagName("main")[0];
 
-    if (x.style.display == "flex")
+    if (x.style.display == "flex") {
         x.style.display = "none";
-    else
+        y.style.display = "grid";
+    }
+    else {
         x.style.display = "flex";
+        y.style.display = "none";
+    }     
 }
+
+let menuCategory = document.getElementById("menuCategory");
+let categoryItems = document.getElementsByClassName("categoryItem");
+
+menuCategory.addEventListener('click', function () {
+    for (let i = 0; i < categoryItems.length; i++) {
+        if (categoryItems[i].style.display == "flex")
+            categoryItems[i].style.display = "none";
+        else
+            categoryItems[i].style.display = "flex";
+    }
+});
