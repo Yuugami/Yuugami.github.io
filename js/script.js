@@ -1,3 +1,5 @@
+// Slideshow
+
 var myIndex = 0;
 carousel();
 
@@ -48,6 +50,8 @@ function toggleMenu() {
     }     
 }
 
+// Event Listener for Collapsible
+
 let menuCategory = document.getElementById("menuCategory");
 let categoryItems = document.getElementsByClassName("categoryItem");
 
@@ -58,4 +62,20 @@ menuCategory.addEventListener('click', function () {
         else
             categoryItems[i].style.display = "flex";
     }
+});
+
+// Collapsible Icon Script 
+
+var coll = document.getElementById("menuCategory");
+var i;
+
+coll.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
 });

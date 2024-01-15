@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Command: sass --watch sass/style.scss css/style.css*/
 /******************** Imports ********************/
 /*
@@ -125,6 +126,17 @@ header nav ul {
 }
 .grid-container nav input {
   z-index: 3;
+}
+
+.collapsible:after {
+  content: "+";
+  color: #a0a09f;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "−";
 }
 
 #theMenu {
