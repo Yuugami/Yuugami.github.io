@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About Karly</title>
+</head>
+
+<body>
+    <header>
+        <div class="grid-container wBgCntrdTxt">
+            <span id="title">COOKING WITH KARLY</span>
+            <nav>
+                <input type="checkbox" role="button" aria-label="Display the menu" class="menu" onclick="toggleMenu()">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Categories</a></li>
+                    <li><a href="">About Me</a></li> 
+                </ul>
+                <ul id="socials">
+                    <li>
+                        <a href="https://www.tiktok.com/@cookingwithkarly"><img alt="TikTok" fetchpriority="high" src="https://static.wixstatic.com/media/11062b_8e8bb1bfaeb54186ace77d5ab14933ff~mv2.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_8e8bb1bfaeb54186ace77d5ab14933ff~mv2.png" style="width: 22px; height: 22px; object-fit: cover;"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/cooking_with_karly/"><img alt="Instagram" fetchpriority="high" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" style="width: 22px; height: 22px; object-fit: cover;"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="theMenu">
+            <ul>
+                <li><a href="temp.html">Home</a></li>
+                <li id="menuCategory" class="collapsible">Categories</li>
+                <li class="categoryItem"><a href="">Healthy Recipes</a></li>
+                <li class="categoryItem"><a href="">Resources</a></li>
+                <li class="categoryItem"><a href="">Classes</a></li>
+                <li aria-current="page"><a href="aboutMe.html">About Me</a></li> 
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="aboutMe" class="category">
+            <div>
+                <img alt="some place" src="img/karlyEatingSushi.jpg">
+            </div>
+            <div class="caption wBgCntrdTxt">
+                Welcome to Cooking With Karly! I'm Karly, a passionate food 
+                enthusiast and recipe developer. Through this website, I hope 
+                to share my love for cooking and healthy eating with you. Join 
+                me on this journey as we explore new flavors, ingredients, and 
+                cuisines. Whether you're a seasoned chef or a beginner in the 
+                kitchen, I have something for everyone. 
+                
+                Let's fall in love with cooking one dish at a time!
+            </div>
+        </section>
+
+        <section id="intro" class="wBgCntrdTxt">
+            
+        </section>
+        <section id="subscribe">
+            <div id="subscribeContainer" class="wBgCntrdTxt">
+                <div id="callToAction">GET MY LATEST RECIPES</div>
+                <div id="email">
+                    <input type="email" name="" id="" placeholder="Enter your email here*">
+                </div>
+                <span class="button">SUBSCRIBE NOW</span>
+            </div>
+        </section>
+        <div class="backToTop">
+            <a href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.8285 14.8284L16.2427 13.4142L12.0001 9.17161L7.75745 13.4142L9.17166 14.8285L12.0001 12L14.8285 14.8284Z"
+                        fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12ZM12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3Z"
+                        fill="currentColor" />
+                </svg>
+            </a>
+        </div>
+    </main>
+    <footer style="background-color: white;">
+        <div id="footer-container">
+            <div>
+                © 2035 by Cooking With Karly
+                <br>
+                Powered and secured by GitHub.
+            </div>
+            <div class="">
+                <img alt="Instagram" fetchpriority="high" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" style="width: 22px; height: 22px; object-fit: cover;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
+                        fill="currentColor" />
+                </svg>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
