@@ -8,18 +8,33 @@
 
 /******************** Variables ********************/
 
-$font1: normal normal normal 14.25px/1.4em proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;
-$font2: normal normal bold 23.465px/1.4em 'playfair display',serif;
-$font3: normal normal normal 15px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;;
-$font4: normal normal normal 12.178640776699028px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
-$font5: normal normal normal 15px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+$font1: normal normal normal 14.25px/1.4em proxima-n-w01-reg,
+proxima-n-w05-reg,
+sans-serif;
+$font2: normal normal bold 23.465px/1.4em 'playfair display',
+serif;
+$font3: normal normal normal 15px/1.4em georgia,
+palatino,
+'book antiqua',
+'palatino linotype',
+serif;
+;
+$font4: normal normal normal 12.178640776699028px/1.4em georgia,
+palatino,
+'book antiqua',
+'palatino linotype',
+serif;
+$font5: normal normal normal 15px/1.4em helvetica-w01-bold,
+helvetica-w02-bold,
+helvetica-lt-w10-bold,
+sans-serif;
 
 /******************** General ********************/
 
 body {
     background-color: rgb(240, 240, 240);
 
-    > * {
+    >* {
         margin: 0 auto;
         width: 97%;
     }
@@ -40,13 +55,12 @@ header nav ul {
     position: relative;
 
     display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 
-                        1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
     height: 100px;
     width: 100%;
 
-    > * {
+    >* {
         justify-self: center;
         align-self: center;
     }
@@ -66,7 +80,7 @@ header nav ul {
 
 .collapsible:after {
     content: '\002B';
-    color: rgb(160,160,159);
+    color: rgb(160, 160, 159);
     font-weight: bold;
     // float: right;
     margin-left: 5px;
@@ -79,7 +93,7 @@ header nav ul {
 #theMenu {
     position: absolute;
     top: 0;
-    
+
     display: none;
     justify-content: center;
     align-items: center;
@@ -94,25 +108,26 @@ header nav ul {
     ul {
         width: 80%;
 
-        a, li {
+        a,
+        li {
             display: inline;
-            text-decoration: none;    
+            text-decoration: none;
         }
 
         li {
             display: flex;
             align-items: center;
             justify-content: center;
-            
+
             height: 50px;
 
-            color: rgb(160,160,159);
+            color: rgb(160, 160, 159);
 
             text-transform: uppercase;
 
             &[aria-current="page"] {
                 background-color: rgb(39, 39, 39);
-                
+
                 a {
                     color: white;
                 }
@@ -123,7 +138,7 @@ header nav ul {
             }
 
             a {
-                color: rgb(160,160,159);
+                color: rgb(160, 160, 159);
             }
 
             svg {
@@ -172,58 +187,57 @@ main {
     }
 }
 
-#categories {
-    .category {
+.category {
+    position: relative;
+
+    margin: 20px 0;
+
+    width: 100%;
+    height: auto;
+
+    clear: both;
+
+    img {
         position: relative;
-
-        margin: 20px 0;
-
         width: 100%;
-        height: auto;
+        height: 100%;
 
-        clear: both;
+        z-index: 1;
+    }
 
-        img {
-            position: relative;
-            width: 100%;
-            height: 100%;
+    .captionSpace {
+        height: 100px;
+    }
+}
 
-            z-index: 1;
-        }
 
-        .captionSpace {
-            height: 100px;
-        }
+.caption {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
-        .caption {
-            border: 1px solid black;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            
-            position: absolute;
-            bottom: 6%;
-            left: 7%;
-            width: 85%;
-            height: 115px;
+    position: absolute;
+    bottom: 6%;
+    left: 7%;
+    width: 85%;
+    min-height: 115px;
 
-            margin: 0 auto;
+    margin: 0 auto;
 
-            z-index: 2;
+    z-index: 2;
 
-            a {
-                display: block;
+    a {
+        display: block;
 
-                color: inherit;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
 
-            .captionTitle {
-                font: $font2;
-                font-size: 27px;
-            }
-        }
+    .captionTitle {
+        font: $font2;
+        font-size: 27px;
     }
 }
 
@@ -266,7 +280,7 @@ span.button {
             width: 100%;
 
             img {
-                width:100%;
+                width: 100%;
             }
         }
     }
@@ -312,7 +326,7 @@ span.button {
 
     #readMore {
         display: flex;
-        
+
         width: 100%;
     }
 }
@@ -327,7 +341,7 @@ span.button {
         #callToAction {
             padding: 5px 0;
             padding-bottom: 15px;
-            font: $font5; 
+            font: $font5;
         }
 
         #email input {
@@ -348,10 +362,52 @@ span.button {
     margin: 10px 0;
 }
 
+/******************** AboutMe.html ********************/
+
+#aboutMe {
+    margin: 0;
+
+    .caption {
+        position: relative;
+        bottom: 4%;
+        left: 0;
+
+        width: 88%;
+
+        h1 {
+            margin-top: 25px;
+        }
+
+        p {
+            padding: 0 15px;
+        }
+    }
+
+    form {
+        input, textarea {
+            width: 95%;
+            
+            margin: 4px 0;
+            padding: 5px 15px;
+        }
+
+        input[type='submit'] {
+            margin-bottom: 8px;
+        
+            height: 35px;
+        
+            color: white;
+            background-color: rgb(43, 43, 43);
+        
+            font: $font3;
+        }
+    }
+}
+
 /******************** Footer ********************/
 
 footer {
-    > div {
+    >div {
         display: flex;
         flex-direction: column;
 

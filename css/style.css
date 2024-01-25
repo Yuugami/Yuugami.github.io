@@ -153,7 +153,8 @@ header nav ul {
 #theMenu ul {
   width: 80%;
 }
-#theMenu ul a, #theMenu ul li {
+#theMenu ul a,
+#theMenu ul li {
   display: inline;
   text-decoration: none;
 }
@@ -211,23 +212,24 @@ main {
   font-size: 23px;
 }
 
-#categories .category {
+.category {
   position: relative;
   margin: 20px 0;
   width: 100%;
   height: auto;
   clear: both;
 }
-#categories .category img {
+.category img {
   position: relative;
   width: 100%;
   height: 100%;
   z-index: 1;
 }
-#categories .category .captionSpace {
+.category .captionSpace {
   height: 100px;
 }
-#categories .category .caption {
+
+.caption {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -236,17 +238,17 @@ main {
   bottom: 6%;
   left: 7%;
   width: 85%;
-  height: 115px;
+  min-height: 115px;
   margin: 0 auto;
   z-index: 2;
 }
-#categories .category .caption a {
+.caption a {
   display: block;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
 }
-#categories .category .caption .captionTitle {
+.caption .captionTitle {
   font: normal normal bold 23.465px/1.4em "playfair display", serif;
   font-size: 27px;
 }
@@ -343,6 +345,35 @@ span.button {
 
 .backToTop {
   margin: 10px 0;
+}
+
+/******************** AboutMe.html ********************/
+#aboutMe {
+  margin: 0;
+}
+#aboutMe .caption {
+  position: relative;
+  bottom: 4%;
+  left: 0;
+  width: 88%;
+}
+#aboutMe .caption h1 {
+  margin-top: 25px;
+}
+#aboutMe .caption p {
+  padding: 0 15px;
+}
+#aboutMe form input, #aboutMe form textarea {
+  width: 95%;
+  margin: 4px 0;
+  padding: 5px 15px;
+}
+#aboutMe form input[type=submit] {
+  margin-bottom: 8px;
+  height: 35px;
+  color: white;
+  background-color: #2b2b2b;
+  font: normal normal normal 15px/1.4em georgia, palatino, "book antiqua", "palatino linotype", serif;
 }
 
 /******************** Footer ********************/
