@@ -14,14 +14,190 @@
 </head>
 
 <body>
-    <br><br>
+    <header>
+        <div class="grid-container wBgCntrdTxt">
+            <span id="title">COOKING WITH KARLY</span>
+            <nav>
+                <input type="checkbox" role="button" aria-label="Display the menu" class="menu" onclick="toggleMenu()">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Categories</a></li>
+                    <li><a href="aboutMe.html">About Me</a></li> 
+                </ul>
+                <ul id="socials">
+                    <li>
+                        <a href="https://www.tiktok.com/@cookingwithkarly"><img alt="TikTok" fetchpriority="high" src="https://static.wixstatic.com/media/11062b_8e8bb1bfaeb54186ace77d5ab14933ff~mv2.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_8e8bb1bfaeb54186ace77d5ab14933ff~mv2.png" style="width: 22px; height: 22px; object-fit: cover;"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/cooking_with_karly/"><img alt="Instagram" fetchpriority="high" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" style="width: 22px; height: 22px; object-fit: cover;"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="theMenu">
+            <ul>
+                <li aria-current="page"><a href="index.html">Home</a></li>
+                <li id="menuCategory" class="collapsible">Categories</li>
+                <li class="categoryItem"><a href="">Healthy Recipes</a></li>
+                <li class="categoryItem"><a href="">Resources</a></li>
+                <li class="categoryItem"><a href="">Classes</a></li>
+                <li><a href="aboutMe.html">About Me</a></li> 
+            </ul>
+        </div>
+    </header>
 
     <main>
-        <h1>Website is cooking! Stay tuned!</h1>
-        <img src="https://imgs.search.brave.com/-Tqui1L5nUenaeDBfPbwdWTj0Li8-SAlTp-eU0RhMlU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vdmVjdG9y/cy9jYXJ0b29uLWtp/ZC1jaGVmcy1jb29r/aW5nLXZlY3Rvci1p/ZDYwMzk5NzI0OD9r/PTIwJm09NjAzOTk3/MjQ4JnM9NjEyeDYx/MiZ3PTAmaD01elcz/UUdxVHlTNkhoX2R1/U0w4UmhGTWVqZFgw/SnJid0VhU2JBa1Ja/bWZrPQ.jpeg"
-            alt="">
+        <section id="slideShow">
+            <div class="w3-content w3-section" style="max-width:1200px">
+                <img class="mySlides" alt="" src="img/peach.jpg" style="width:100%">
+                <img class="mySlides" alt="" src="img/gourmetSandwich.jpg" style="width:100%">
+                <img class="mySlides" alt="" src="img/fruitBowl.jpg" style="width:100%">
+                <img class="mySlides" alt="" src="img/stuffedSquash.jpg" style="width:100%">
+                <img class="mySlides" alt="" src="img/chocoMug.jpg" style="width:100%">
+                <img class="mySlides" alt="" src="img/bruschetta.jpg" style="width:100%">
+                <img class="mySlides" alt="" src="img/eggplantParmesan.jpg" style="width:100%">
+                <img class="mySlides" alt="" src="img/chocolateOat.jpg" style="width:100%">
+                <img class="mySlides" alt="" src="img/pumpkinLoaf.jpg" style="width:100%">
+                <img class="mySlides" alt="" src="img/dumpling.jpg" style="width:100%">
+                <img class="mySlides" alt="" src="img/tiramisuCookie.jpg" style="width:100%">
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="intro" class="wBgCntrdTxt">
+            <p>
+                Welcome to Cooking with Karly! Here we are dedicated to sharing
+                healthy recipes, educational tips, and resources for children & adults
+                with special needs, and their parents/guardians.
+            </p>
+        </section>
+
+        <section id="categories">
+            <div class="category">
+                <a href=""><img src="img/greens.jpg" alt=""></a>
+                <div class="caption wBgCntrdTxt">
+                    <a href=""><div class="captionTitle">Healthy Recipes</div></a>
+                </div>
+                <div class="captionSpace">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="category">
+                <a href=""><img src="img/desserts.jpg" alt=""></a>
+                <div class="caption wBgCntrdTxt">
+                    <a href=""><div class="captionTitle">Resources</div></a>
+                </div>
+                <div class="captionSpace">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="category">
+                <a href=""><img src="img/icecream.jpg" alt=""></a>
+                <div class="caption wBgCntrdTxt">
+                    <a href=""><div class="captionTitle">Sign Up for Classes</div></a>
+                </div>
+                <div class="captionSpace">
+                    &nbsp;
+                </div>
+            </div>
+        </section>
+        <section id="blogFeed">
+            <div class="blogItem">
+                <div class="blogPicture">
+                    <img src="img/pizza.jpg" alt="Woman eating pizza">
+                </div>
+                <div class="blogPost">
+                    <div class="blogPostContainer">
+                        <div class="postTime">November 11, 2023</div>
+                        <h3 class="postTitle">How not to eat a pizza</h3>
+                        <p class="postSubtitle">
+                            Create a blog post subtitle that summarizes your post in a few short sentences.
+                        </p>
+                        <hr>
+                        <div class="postAnalytics">
+                            <div class="analyticItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                    aria-label="0 views" class="blog-post-post-list-description-fill">
+                                    <title></title>
+                                    <path
+                                        d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z">
+                                    </path>
+                                </svg>
+                                <span>0</span>
+                            </div>
+                            <div></div>
+                            <div class="analyticItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                    aria-label="0 comments"
+                                    class="blog-post-post-list-description-fill blog-link-hover-fill">
+                                    <title></title>
+                                    <path
+                                        d="M9.5,13 L15,13 C15.5522847,13 16,12.5522847 16,12 L16,12 L16,5 C16,4.44771525 15.5522847,4 15,4 L15,4 L4,4 L4,4 C3.44771525,4 3,4.44771525 3,5 L3,12 C3,12.5522847 3.44771525,13 4,13 L7,13 L7,15.5 L9.5,13 Z M15.0081158,13.973325 L10,13.973325 L7.42191625,16.5445317 C6.63661359,17.3277395 6,17.0667904 6,15.9700713 L6,13.973325 L3.99188419,13.973325 C2.89179693,13.973325 2,13.0706688 2,11.979044 L2,4.994281 C2,3.89287002 2.89339733,3 3.99188419,3 L15.0081158,3 C16.1082031,3 17,3.90265618 17,4.994281 L17,11.979044 C17,13.0804549 16.1066027,13.973325 15.0081158,13.973325 Z">
+                                    </path>
+                                </svg>
+                                <span>0</span>
+                            </div>
+                            <div></div>
+                            <div class="analyticItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img">
+                                    <path
+                                        d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="readMore">
+                <span class="button">READ MORE</span>
+            </div>
+        </section>
+        <section id="subscribe">
+            <div id="subscribeContainer" class="wBgCntrdTxt">
+                <form action="https://formspree.io/f/xnqejejy">
+                    <div id="callToAction">GET MY LATEST RECIPES</div>
+                    <div id="email">
+                        <input type="email" name="_replyto" id="email" placeholder="Enter your email here*">
+                    </div>
+                    <span class="button">SUBSCRIBE NOW</span>
+                </form> 
+            </div>
+        </section>
+        <div class="backToTop">
+            <a href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.8285 14.8284L16.2427 13.4142L12.0001 9.17161L7.75745 13.4142L9.17166 14.8285L12.0001 12L14.8285 14.8284Z"
+                        fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12ZM12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3Z"
+                        fill="currentColor" />
+                </svg>
+            </a>
+        </div>
     </main>
-    <footer></footer>
+    <footer style="background-color: white;">
+        <div id="footer-container">
+            <div>
+                © 2035 by Cooking With Karly
+                <br>
+                Powered and secured by GitHub.
+            </div>
+            <div class="">
+                <a href="https://www.tiktok.com/@cookingwithkarly"><img alt="TikTok" fetchpriority="high" src="https://static.wixstatic.com/media/11062b_8e8bb1bfaeb54186ace77d5ab14933ff~mv2.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_8e8bb1bfaeb54186ace77d5ab14933ff~mv2.png" style="width: 22px; height: 22px; object-fit: cover;"></a>
+                <a href="https://www.instagram.com/cooking_with_karly/"><img alt="Instagram" fetchpriority="high" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" style="width: 22px; height: 22px; object-fit: cover;"></a>
+                <a href="https://www.youtube.com/@cookingwithkarly">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 
