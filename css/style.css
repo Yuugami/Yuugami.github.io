@@ -479,7 +479,13 @@ footer > div div:first-child {
   }
   main #aboutMe {
     grid-row: 3;
-    grid-column: 8/span 3;
+    grid-column: 3/span 8;
+    display: flex;
+    align-items: stretch;
+    align-items: center;
+  }
+  main #aboutMe > div:first-child {
+    height: 522px;
   }
   main #subscribe {
     grid-row: 3;
