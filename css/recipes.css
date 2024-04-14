@@ -1,12 +1,14 @@
-main {
-  display: block;
-}
+@media only screen and (min-width: 1024px) {
+  main {
+    display: block;
+  }
 
-#recipeCards {
-  display: grid;
-  grid-template: 1fr/35% 35%;
-  gap: 7px;
-  justify-content: center;
+  #recipeCards {
+    display: grid;
+    grid-template: 1fr/35% 35%;
+    gap: 7px;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=recipes.css.map */
