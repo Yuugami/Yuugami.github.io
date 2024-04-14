@@ -376,6 +376,17 @@ span.button {
   font: normal normal normal 15px/1.4em georgia, palatino, "book antiqua", "palatino linotype", serif;
 }
 
+/**************** hpRecipes.html ****************/
+#recipeCards {
+  display: flex;
+  flex-direction: column;
+}
+#recipeCards img {
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+}
+
 /******************** Footer ********************/
 footer > div {
   display: flex;

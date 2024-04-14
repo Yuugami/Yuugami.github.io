@@ -404,6 +404,20 @@ span.button {
     }
 }
 
+/**************** hpRecipes.html ****************/
+
+#recipeCards {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        position: relative;
+
+        border: 1px solid black;
+        width: 100%;
+    }
+}
+
 /******************** Footer ********************/
 
 footer {
